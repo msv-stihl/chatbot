@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Chamados Manserv</title>
+</head>
+<body>
+    <header class="header">
+        <img src="imgs/logo_manserv.png" alt="logo manserv">
+        <h3>Consulte seu chamado</h3>   
+    </header>
+    <div class="chat">
+        <div class="chat-messages" id="chat-messages">
+            <!--where chat messages will go-->
+        </div>
+        <div class="text-box">
+            <img src="imgs/icone_balao.png" alt="balao de texto" class="icon-left">
+            <input
+                type="text"
+                class="form-control"
+                placeholder="Digite sua mensagem"
+                id="searchTxt"
+            />
+            <img src="imgs/icone_enviar.png" alt="botao enviar" class="icon-right" onclick="sendMessage()">
+        </div>
+    </div>
+    <script src="export.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
