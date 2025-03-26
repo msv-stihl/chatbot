@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+:root{
+    --plumbum: rgb(35,35,35);
+    --ice: rgb(237,237,237);
+    --orange: rgb(255,70,10);
+    --dark-plumbum: rgb(17,17,17);
+
+    --main-font: 'IBM Plex Sans', serif;
+    --main-font-regular: 400;
+    --main-font-light: 300;
+}
+
+.header{
+    margin: none;
+    padding: none;
+    background-color: var(--dark-plumbum);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 40px;
+}
+
+.header img{
+    width: 15%;
+    height: 15%;
+    margin: 10px;
+}
+
+.header h3{
+    margin: 10px 15px;
+    color: var(--ice);
+    font-family: var(--main-font);
+    font-weight: var(--main-font-regular);
+}
+
+body{
+    background-color: var(--plumbum);
+    font-family: var(--main-font);
+    font-weight: var(--main-font-regular);
+}
+
+.chat{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    width: 100%;
+}
+
+.chat-messages{
+    height: auto;
+    max-height: 83.5%;
+    width: 70%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow-y: scroll;
+    scroll-behavior: auto;
+    scrollbar-width: none;
+    position: absolute;
+    bottom: 90px;
+}
+
+.incoming-message{
+    margin: 5px 5px;
+    width: auto;
+    max-width: 90%;
+    padding: 10px 20px;
+    height: auto;
+    background-color: var(--orange);
+    color: white;
+    box-shadow: 5px 5px rgb(255,162,122);
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.outgoing-message{
+    width: auto;
+    max-width: 90%;
+    padding: 10px 20px;
+    height: auto;
+    background-color: var(--ice);
+    color: var(--plumbum);
+    box-shadow: 5px 5px white;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.time{
+    width: auto;
+    color: white;
+    display: block;
+    font-size: 12px;
+    margin: 8px 0 0;
+    padding-left: 10px;
+}
+
+.text-box{
+    width: 70%;
+    height: 6%;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    bottom: 10px;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.form-control{
+    outline: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+    font-size: 28px;
+    width: 93%;
+}
+
+.icon-left{
+    width: 25px;
+    height: 25px;
+    padding: 0 10px;
+}
+
+.icon-right{
+    width: 25px;
+    height: 25px;
+}
