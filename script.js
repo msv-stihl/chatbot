@@ -143,12 +143,10 @@ function returnMessage(object){
     var status = object[7];
     var message = "";
     var prioridade = object[2];
-    var dataPrev = object[8].substring(0, 11);
+    var dataPrev = object[8];
     var prioTxt = "";
     var prazo = "";
     var enviarDuvida;
-    console.log(dataPrev);
-    console.log(status);
     switch(prioridade){
         case "2":
             prioTxt = "alta";
