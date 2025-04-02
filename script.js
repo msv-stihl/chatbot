@@ -265,8 +265,7 @@ function returnMessage(object){
             }
             break;
         case "50": //Programada
-            var progData = dateConversion(object[8]);
-            message = `Uhuu! Seu chamado está programado para o dia ${progData} 🥰`;
+            message = `Uhuu! Seu chamado está programado para o dia ${dataPrev} 🥰`;
             enviarDuvida = true;
             break;
         case "55": //Em execução
