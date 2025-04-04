@@ -141,6 +141,7 @@ const searchError = `Poxa, não consegui localizar o seu chamado 😕. Por favor
 function returnMessage(object){
     var emojiDaRe = "";
     var status = object[7];
+    var tipoServ = object[9];
     var message = "";
     var prioridade = object[2];
     var dataPrev = object[8].substring(0, 11);
@@ -263,8 +264,24 @@ function returnMessage(object){
             }
             break;
         case "50": //Programada
-            message = `Uhuu! Seu chamado está programado para o dia ${dataPrev} 🥰`;
-            enviarDuvida = true;
+            switch(tipoServ){
+                case "05": //Corretiva planejada
+                    message = `Uhuu! Seu chamado está programado para o dia ${dataPrev} 🥰`;
+                    enviarDuvida = true;
+                    break;
+                case "06": //ZU
+                    message = `Uhuu! Seu chamado está programado para o dia ${dataPrev} 🥰`;
+                    enviarDuvida = true;
+                    break;
+                case "07": //Melhoria
+                    message = `Uhuu! Sua melhoria está programada para o dia ${dataPrev} 🥰`;
+                    enviarDuvida = true;
+                    break;
+                case "10": //Avaliação
+                    message = `Uhuu! Seu chamado está programado para ser avaliado dia ${dataPrev} 🥰`;
+                    enviarDuvida = true;
+                    break;
+            }
             break;
         case "55": //Em execução
             message = `Seu chamado está em execução 🫡`;
