@@ -378,8 +378,9 @@ function parseDate(dmyString){
 }
 
 function dateToString(date){
-    var strDate = dateConversion(date);
-    var fullYear = date.getFullYear();
-    var formatDate = strDate + "/" + fullYear;
+    const stringDay = String(date.getDate()).padStart(2, '0');
+    const stringMonth = String(date.getMonth() + 1).padStart(2, '0');
+    const stringYear = date.getFullYear();
+    const formatDate = `${stringDay}/${stringMonth}/${stringYear}`;
     return formatDate;
 }
