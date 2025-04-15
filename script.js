@@ -1,4 +1,9 @@
 var randomnumber = 0;
+const priorityDays = {
+    2: 30,
+    3: 60,
+    4: 90
+}
 
 helloMessage();
 document.querySelector("#searchTxt").addEventListener("keydown", function(event){
@@ -148,18 +153,29 @@ function returnMessage(object){
     var prioTxt = "";
     var prazo = "";
     var enviarDuvida;
+
+    const dateS = new Date();
+    const day = String(dateS.getDate()).padStart(2, '0');
+    const month = String(dateS.getMonth() + 1).padStart(2, '0'); // Months are 0-indexed
+    const year = dateS.getFullYear();
+    const today = `${day}/${month}/${year}`;
+
+    const dateToday = parseDate(today);
+    const datePreview = parseDate(dataPrev);
+    const datePlusPrio = addPriorityDays(dateToday, prioridade)
+
     switch(prioridade){
         case "2":
             prioTxt = "alta";
-            prazo = "10 dias";
+            prazo = "30 dias";
             break;
         case "3":
             prioTxt = "média";
-            prazo = "30 dias";
+            prazo = "60 dias";
             break;
         case "4":
             prioTxt = "baixa";
-            prazo = "60 dias";
+            prazo = "90 dias";
             break;
         case "5":
             prioTxt = "parada programada";
@@ -240,8 +256,15 @@ function returnMessage(object){
             enviarDuvida = true;
             break;
         case "47": //Disponível para programar
-            message = `Seu chamado foi definido como prioridade ${prioTxt} e tem o prazo de ${prazo}. Até o momento, a previsão máxima de execução é ${dataPrev} ☺️`;
-            enviarDuvida = true;
+            if(datePreview < dateToday){
+                message = `Seu chamado foi definido como prioridade ${prioTxt} e tem o prazo de ${prazo}. Até o momento, a previsão máxima de execução é ${datePlusPrio} ☺️`;
+                enviarDuvida = true;
+                break;
+            } else{
+                message = `Seu chamado foi definido como prioridade ${prioTxt} e tem o prazo de ${prazo}. Até o momento, a previsão máxima de execução é ${datePreview} ☺️`;
+                enviarDuvida = true;
+                break;
+            }
             break;
         case "48": //Aguardando orçamento
             message = `Vi aqui que seu chamado foi avaliado e está em processo de cotação, a requisição de compra deve ser criada logo mais. Sugiro que verifique novamente dentro de alguns dias para que eu possa te atualizar melhor 😉`;
@@ -278,7 +301,7 @@ function returnMessage(object){
                     enviarDuvida = true;
                     break;
                 case "10": //Avaliação
-                    message = `Uhuu! Seu chamado está programado para ser avaliado dia ${dataPrev} 🥰`;
+                    message = `Uhuu! Seu chamado está programado para ser avaliado no dia ${dataPrev} 🥰`;
                     enviarDuvida = true;
                     break;
             }
@@ -339,3 +362,10 @@ function dateFormat(){
     var month = stringDate.substring(4, 7);
     return `${hour}:${minutes} | ${day}/${month}`;
 }
+
+function addPriorityDays(date, priority) {
+    const daysToAdd = priorityDays[priority] || 0;
+    const result = new Date(date);
+    result.setDate(result.getDate() + daysToAdd);
+    return result;
+  }
