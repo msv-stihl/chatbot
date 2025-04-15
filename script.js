@@ -368,4 +368,9 @@ function addPriorityDays(date, priority) {
     const result = new Date(date);
     result.setDate(result.getDate() + daysToAdd);
     return result;
-  }
+}
+
+function parseDate(dmyString) {
+    const [day, month, year] = dmyString.split('/');
+    return new Date(year, month - 1, day);
+}
