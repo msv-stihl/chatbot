@@ -163,6 +163,8 @@ function returnMessage(object){
     const dateToday = parseDate(today);
     const datePreview = parseDate(dataPrev);
     const datePlusPrio = addPriorityDays(dateToday, prioridade)
+    const strDatePreview = dateToString(datePreview);
+    const strDatePlusPrio = dateToString(datePlusPrio);
 
     switch(prioridade){
         case "2":
@@ -257,11 +259,11 @@ function returnMessage(object){
             break;
         case "47": //Disponível para programar
             if(datePreview < dateToday){
-                message = `Seu chamado foi definido como prioridade ${prioTxt} e tem o prazo de ${prazo}. Até o momento, a previsão máxima de execução é ${datePlusPrio} ☺️`;
+                message = `Seu chamado foi definido como prioridade ${prioTxt} e tem o prazo de ${prazo}. Até o momento, a previsão máxima de execução é ${strDatePlusPrio} ☺️`;
                 enviarDuvida = true;
                 break;
             } else{
-                message = `Seu chamado foi definido como prioridade ${prioTxt} e tem o prazo de ${prazo}. Até o momento, a previsão máxima de execução é ${datePreview} ☺️`;
+                message = `Seu chamado foi definido como prioridade ${prioTxt} e tem o prazo de ${prazo}. Até o momento, a previsão máxima de execução é ${strDatePreview} ☺️`;
                 enviarDuvida = true;
                 break;
             }
@@ -363,14 +365,21 @@ function dateFormat(){
     return `${hour}:${minutes} | ${day}/${month}`;
 }
 
-function addPriorityDays(date, priority) {
+function addPriorityDays(date, priority){
     const daysToAdd = priorityDays[priority] || 0;
     const result = new Date(date);
     result.setDate(result.getDate() + daysToAdd);
     return result;
 }
 
-function parseDate(dmyString) {
+function parseDate(dmyString){
     const [day, month, year] = dmyString.split('/');
     return new Date(year, month - 1, day);
+}
+
+function dateToString(date){
+    var strDate = dateConversion(date);
+    var fullYear = date.getFullYear();
+    var formatDate = strDate + "/" + fullYear;
+    return formatDate;
 }
