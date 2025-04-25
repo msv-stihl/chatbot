@@ -378,7 +378,8 @@ function returnMessage(object){
                     <p class="incoming-message">${message}</p>
                     </div>`;
     document.querySelector('#chat-messages')
-    .innerHTML += `<div class="incoming-chat response">
+    .innerHTML += `<div class=incoming-chat"></div>
+                    <div class="incoming-chat response">
                     <p class="incoming-message">${quantChamados}</p>
                     </div>`;
     if(enviarDuvida){
