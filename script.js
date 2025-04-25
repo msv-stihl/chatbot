@@ -79,16 +79,16 @@ function countIncidents(){
     quantParada = 0;
     for(let i = 0; i < json.sisteplant.length; i++){
         switch(json.sisteplant[i][2]){
-            case 2:
+            case "2":
                 quantAlta++;
                 break;
-            case 3:
+            case "3":
                 quantMedia++;
                 break;
-            case 4:
+            case "4":
                 quantBaixa++;
                 break;
-            case 5:
+            case "5":
                 quantParada++;
                 break;
         }
@@ -171,10 +171,10 @@ const winking = "";
 const duvida = `Caso ainda tenha alguma dúvida sobre o seu chamado, ou precise de alguma outra informação, favor enviar e-mail para manserv@stihl.com.br. Ah, não esqueça de informar o número do seu chamado no e-mail ;)${winking}`;
 const searchError = `Poxa, não consegui localizar o seu chamado 😕. Por favor, verifique se o número está correto e, caso esteja, envie um e-mail para manserv@stihl.com.br informando o número.`;
 const quantChamados = `A Manserv possui atualmente a seguinte quantidade de chamados abertos:
-Prioridade alta: ${quantAlta}
-Prioridade Média: ${quantMedia}
-Prioridade Baixa: ${quantBaixa}
-Parada Programada: ${quantParada}`;
+\nPrioridade alta: ${quantAlta}
+\nPrioridade Média: ${quantMedia}
+\nPrioridade Baixa: ${quantBaixa}
+\nParada Programada: ${quantParada}`;
 
 function returnMessage(object){
     countIncidents();
