@@ -5,6 +5,11 @@ const priorityDays = {
     4: 90
 }
 
+var quantAlta = 0;
+var quantMedia = 0;
+var quantBaixa = 0;
+var quantParada = 0;
+
 helloMessage();
 document.querySelector("#searchTxt").addEventListener("keydown", function(event){
     if(event.keyCode === 13){
@@ -19,13 +24,13 @@ function getName(){
     randomnumber = Math.floor(Math.random() * (maxNumber + 1) + minNumber);
     switch(randomnumber){
         case 0:
-            name = "Hanna";
+            name = "S.A.M.A.N.T.H.A. - Sistema de Acompanhamento Manserv de Tratativas, Históricos e Atendimentos";
             break;
         case 1:
-            name = "Samantha";
+            name = "S.A.M.A.N.T.H.A. - Sistema de Acompanhamento Manserv de Tratativas, Históricos e Atendimentos";
             break;
         case 2:
-            name = "TARS";
+            name = "S.A.M.A.N.T.H.A. - Sistema de Acompanhamento Manserv de Tratativas, Históricos e Atendimentos";
             break;
     }
     return name;
@@ -33,7 +38,7 @@ function getName(){
 
 function helloMessage(){
     var assistente = getName();
-    const hello = `Olá! Me chamo ${assistente} e sou assistente virtual da Manserv. Por favor, informe o número do seu chamado através da ordem SAP. Exemplo: 820171234`;
+    const hello = `Olá! Me chamo ${assistente}. Sou assistente virtual da Manserv, e irei ajudar com o seu atendimento. Por favor, informe o número do seu chamado através da ordem SAP. Exemplo: 820171234`;
     const outputDate = dateFormat();
     document.querySelector('#chat-messages')
     .innerHTML += `<div class="incoming-chat">
@@ -64,6 +69,29 @@ function sendMessage(){
         .getElementById('chat-messages').scrollHeight;
     }else{
         searchIncident(message);
+    }
+}
+
+function countIncidents(){
+    quantAlta = 0;
+    quantMedia = 0;
+    quantBaixa = 0;
+    quantParada = 0;
+    for(let i = 0; i < json.sisteplant.length; i++){
+        switch(json.sisteplant[i][2]){
+            case 2:
+                quantAlta++;
+                break;
+            case 3:
+                quantMedia++;
+                break;
+            case 4:
+                quantBaixa++;
+                break;
+            case 5:
+                quantParada++;
+                break;
+        }
     }
 }
 
@@ -142,13 +170,19 @@ function dateConversion(date){
 const winking = "";
 const duvida = `Caso ainda tenha alguma dúvida sobre o seu chamado, ou precise de alguma outra informação, favor enviar e-mail para manserv@stihl.com.br. Ah, não esqueça de informar o número do seu chamado no e-mail ;)${winking}`;
 const searchError = `Poxa, não consegui localizar o seu chamado 😕. Por favor, verifique se o número está correto e, caso esteja, envie um e-mail para manserv@stihl.com.br informando o número.`;
+const quantChamados = `A Manserv possui atualmente a seguinte quantidade de chamados abertos:
+Prioridade alta: ${quantAlta}
+Prioridade Média: ${quantMedia}
+Prioridade Baixa: ${quantBaixa}
+Parada Programada: ${quantParada}`;
 
 function returnMessage(object){
-    var emojiDaRe = "";
+    countIncidents();
     var status = object[7];
     var tipoServ = object[9];
     var message = "";
     var prioridade = object[2];
+    var prazoAva;
     var dataPrev = object[8].substring(0, 11);
     var prioTxt = "";
     var prazo = "";
@@ -170,33 +204,37 @@ function returnMessage(object){
         case "2":
             prioTxt = "alta";
             prazo = "30 dias";
+            prazoAva = "10 dias";
             break;
         case "3":
             prioTxt = "média";
             prazo = "60 dias";
+            prazoAva = "15 dias";
             break;
         case "4":
             prioTxt = "baixa";
             prazo = "90 dias";
+            prazoAva = "30 dias";
             break;
         case "5":
             prioTxt = "parada programada";
             prazo = "ser executada na próxima parada de manutenção";
+            prazoAva = "60 dias;"
             break;
     }
     switch(status){
         case "0": //Aberta
             switch(randomnumber){
                 case 0:
-                    message = `Seu chamado está aberto e aguardando avaliação da equipe responsável. Um de nossos técnicos irá te procurar em breve, peço que aguarde alguns dias e depois faça a consulta novamente 😉`;
+                    message = `Seu chamado foi aberto como prioridade ${prioTxt} e está aguardando avaliação da equipe responsável. Um de nossos técnicos irá te procurar em breve, o prazo de avaliação é de ${prazoAva} 😉`;
                     enviarDuvida = true;
                     break;
                 case 1:
-                    message = `Seu chamado foi aberto e está aguardando a avaliação da equipe responsável. Em breve, um de nossos técnicos entrará em contato. Por favor, aguarde e consulte novamente depois de alguns dias 😊`;
+                    message = `Seu chamado foi aberto como prioridade ${prioTxt} e está aguardando avaliação da equipe responsável. Em um prazo de ${prazoAva}, um de nossos técnicos entrará em contato. Por favor, aguarde 😊`;
                     enviarDuvida = true;
                     break;
                 case 2:
-                    message = `Seu chamado está em análise pela equipe responsável. Um de nossos técnicos entrará em contato em breve. Pedimos que aguarde e realize uma nova consulta após alguns dias 😙`;
+                    message = `Seu chamado foi aberto como prioridade ${prioTxt} e está em análise pela equipe responsável. Um de nossos técnicos entrará em contato em até ${prazoAva}. Pedimos que aguarde 😙`;
                     enviarDuvida = true;
                     break;
             }
@@ -250,7 +288,7 @@ function returnMessage(object){
             enviarDuvida = false;
             break;
         case "45": //Impedimento - verba
-            message = `Para realizar seu chamado, precisamos de uma verba que o setor de Infraestrutura não possui no momento 🫤. No próximo mês, faremos uma nova avaliação de custos, portanto peço que consulte novamente seu chamado, tá bom? Caso seja algo muito importante para o setor, e vocês possuam a verba para disponibilizar, favor enviar e-mail para manserv@stihl.com.br informando seu chamado e o CC para aquisição do material 🤑`;
+            message = `Para realizar seu chamado, precisamos de uma verba que o setor de Infraestrutura não possui no momento 🫤. No próximo mês, faremos uma nova avaliação de custos, portanto peço que consulte novamente seu chamado, tá bom? Caso seja algo muito importante para o setor, e vocês possuam a verba para disponibilizar, favor entrar em contato com o setor de Infraestrutura`;
             enviarDuvida = false;
             break;
         case "46": //Necessário serviço externo
@@ -338,6 +376,10 @@ function returnMessage(object){
     document.querySelector('#chat-messages')
     .innerHTML += `<div class="incoming-chat response">
                     <p class="incoming-message">${message}</p>
+                    </div>`;
+    document.querySelector('#chat-messages')
+    .innerHTML += `<div class="incoming-chat response">
+                    <p class="incoming-message">${quantChamados}</p>
                     </div>`;
     if(enviarDuvida){
         document.querySelector('#chat-messages')
