@@ -78,19 +78,21 @@ function countIncidents(){
     quantBaixa = 0;
     quantParada = 0;
     for(let i = 0; i < json.sisteplant.length; i++){
-        switch(json.sisteplant[i][2]){
-            case "2":
-                quantAlta++;
-                break;
-            case "3":
-                quantMedia++;
-                break;
-            case "4":
-                quantBaixa++;
-                break;
-            case "5":
-                quantParada++;
-                break;
+        if(json.sisteplant[i][7] < 96){
+            switch(json.sisteplant[i][2]){
+                case "2":
+                    quantAlta++;
+                    break;
+                case "3":
+                    quantMedia++;
+                    break;
+                case "4":
+                    quantBaixa++;
+                    break;
+                case "5":
+                    quantParada++;
+                    break;
+            }
         }
     }
 }
@@ -170,14 +172,10 @@ function dateConversion(date){
 const winking = "";
 const duvida = `Caso ainda tenha alguma dúvida sobre o seu chamado, ou precise de alguma outra informação, favor enviar e-mail para manserv@stihl.com.br. Ah, não esqueça de informar o número do seu chamado no e-mail ;)${winking}`;
 const searchError = `Poxa, não consegui localizar o seu chamado 😕. Por favor, verifique se o número está correto e, caso esteja, envie um e-mail para manserv@stihl.com.br informando o número.`;
-const quantChamados = `A Manserv possui atualmente a seguinte quantidade de chamados abertos:
-\nPrioridade alta: ${quantAlta}
-\nPrioridade Média: ${quantMedia}
-\nPrioridade Baixa: ${quantBaixa}
-\nParada Programada: ${quantParada}`;
 
 function returnMessage(object){
     countIncidents();
+    var quantChamados = ``;
     var status = object[7];
     var tipoServ = object[9];
     var message = "";
@@ -380,7 +378,11 @@ function returnMessage(object){
     document.querySelector('#chat-messages')
     .innerHTML += `<div class="incoming-chat"></div>
                     <div class="incoming-chat response">
-                    <p class="incoming-message">${quantChamados}</p>
+                    <p class="incoming-message">A Manserv possui atualmente a seguinte quantidade de chamados abertos:
+                    <br>Prioridade alta: ${quantAlta}
+                    <br>Prioridade Média: ${quantMedia}
+                    <br>Prioridade Baixa: ${quantBaixa}
+                    <br>Parada Programada: ${quantParada}</p>
                     </div>`;
     if(enviarDuvida){
         document.querySelector('#chat-messages')
