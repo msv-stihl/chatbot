@@ -278,7 +278,7 @@ function returnMessage(object){
             enviarDuvida = false;
             break;
         case "43": //Impedimento - material estoque
-            message = `Seu chamado está aguardando reposição de material no estoque 🙂. Assim que o material estiver disponível, entrará na programação. A previsão máxima é de ${datePreview}`;
+            message = `Seu chamado está aguardando reposição de material no estoque 🙂. Assim que o material estiver disponível, entrará na programação. A previsão máxima é de ${strDatePreview}`;
             enviarDuvida = true;
             break;
         case "44": //Parada programada
@@ -290,7 +290,7 @@ function returnMessage(object){
             enviarDuvida = false;
             break;
         case "46": //Necessário serviço externo
-            message = `Seu chamado necessitará de atendimento de uma empresa externa e está em processo de cotação e programação, conforme prioridades definidas pelo setor de Infraestrutura. A previsão máxima, até o momento, é de ${datePreview} 😉`;
+            message = `Seu chamado necessitará de atendimento de uma empresa externa e está em processo de cotação e programação, conforme prioridades definidas pelo setor de Infraestrutura. A previsão máxima, até o momento, é de ${strDatePreview} 😉`;
             enviarDuvida = true;
             break;
         case "47": //Disponível para programar
@@ -311,15 +311,15 @@ function returnMessage(object){
         case "49": //Requisição criada
             switch(randomnumber){
                 case 0:
-                    message = `Já criamos a requisição de compra para poder atender seu chamado e estamos aguardando a entrega do material. Até o momento, a previsão é para ${datePreview} 😄`;
+                    message = `Já criamos a requisição de compra para poder atender seu chamado e estamos aguardando a entrega do material. Até o momento, a previsão é para ${strDatePreview} 😄`;
                     enviarDuvida = true;
                     break;
                 case 1:
-                    message = `A requisição de compra já foi criada para atender seu chamado e agora estamos aguardando a entrega do material. Até o momento, a previsão é para ${datePreview} 😊`;
+                    message = `A requisição de compra já foi criada para atender seu chamado e agora estamos aguardando a entrega do material. Até o momento, a previsão é para ${strDatePreview} 😊`;
                     enviarDuvida = true;
                     break;
                 case 2:
-                    message = `Seu chamado já tem uma requisição de compra em andamento e estamos esperando a entrega do material. Até o momento, a previsão é para ${datePreview} 🚀`;
+                    message = `Seu chamado já tem uma requisição de compra em andamento e estamos esperando a entrega do material. Até o momento, a previsão é para ${strDatePreview} 🚀`;
                     enviarDuvida = true;
                     break;
             }
