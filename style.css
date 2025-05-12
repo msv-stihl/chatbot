@@ -132,7 +132,7 @@ body{
     .header img{
         width: 30%;
         height: 30%;
-        margin: 0.625rem;
+        margin: 0.25rem;
     }
 
     .chat-messages{
