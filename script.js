@@ -379,7 +379,7 @@ function returnMessage(object){
     .innerHTML += `<div class="incoming-chat"></div>
                     <div class="incoming-chat response">
                     <p class="incoming-message">A Manserv possui atualmente a seguinte quantidade de chamados abertos:
-                    <br>Prioridade alta: ${quantAlta}
+                    <br>Prioridade Alta: ${quantAlta}
                     <br>Prioridade Média: ${quantMedia}
                     <br>Prioridade Baixa: ${quantBaixa}
                     <br>Parada Programada: ${quantParada}</p>

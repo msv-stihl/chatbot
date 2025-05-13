@@ -74264,7 +74264,7 @@ const json = {
 "RS-ST01-07-00T-SLA12",
 "[MTP]ALVENARIA - REPARO PAREDE¢",
 "INC2380986 - Alguns marcos das portas das baias de produtos químicos estão com a alvenaria (reboco) bem danificados, necessitando de correção para deixar um aspecto visual aceitável. Portas de acesso das baias - P07. Solicitante Filipe Rafael.  8M Cantoneira 4''x1/4'' para proteção PEDIDO: 4540900012",
-"50",
+"47",
 "12/05/2025",
 "05",
 "05"
@@ -80153,7 +80153,7 @@ const json = {
 "RS-ST01-28-00T-STR03",
 "[MMC]ALVENARIA - REPARO PAREDE¢",
 "INC2422517 - Reboco quebrado na lateral da porta da área da fusão, próximo ao forno 115. P28 - ZFA. Solicitante Aldenir Cigognini.  1 CIMENTCOLA QUARTZOLIT pedido: 4540902642",
-"50",
+"47",
 "12/05/2025",
 "05",
 "05"
@@ -86224,7 +86224,7 @@ const json = {
 "RS-ST01-07-00T-SLA03",
 "[PLE]LUMINÁRIA - INSTALAÇÃO¢",
 "INC2446627 - Adicionar 1 luminária, conforme avaliação da engenharia de segurança após atualização do PGR. P07 - Área administrativa Fastenal. Solicitante Erivelton Santana.  1 LUMINARIA INDUSTRIAL SOBREPOR 2 LAMPADA LED 9W TUBULAR T8 60CM PEDIDO: 4540902614",
-"50",
+"40",
 "12/05/2025",
 "05",
 "05"
@@ -89812,7 +89812,7 @@ const json = {
 "RS-ST01-52",
 "[PNT]PINTURA - DIVERSOS¢",
 "Pintar tubulação e conexões da VGA 52.01 com tinta poliuretano. Solicitante Gustavo Barth.  1 PU VERMELHO SEGURANÇA PEDIDO: 4540900734",
-"50",
+"55",
 "12/05/2025",
 "05",
 "05"
@@ -160099,11 +160099,11 @@ const json = {
 "58445",
 "820190167",
 "2",
-"ADM",
+"SPI",
 "RS-ST01-43",
 "VÁLVULA - MANUTENÇÃO¢",
 "Vazamento na rede de SPK, VGA.03, corredor AN, posição 016. P43. Solicitante Darlan MSV.",
-"48",
+"40",
 "",
 "05",
 "05"
@@ -161182,7 +161182,7 @@ const json = {
 "RS-ST01-15-00T-SLA06",
 "[HIP]MANUTENÇÃO FECHADURA",
 "INC2684082 - A fechadura está se desconectando da porta da sala de recebimento fiscal. P15-Portaria 2. Solicitante Gilmar Weber.  1 Maçaneta Papaiz MZ 30 CR pedido: 4540903968",
-"55",
+"99",
 "12/05/2025",
 "05",
 "05"
@@ -166694,7 +166694,7 @@ const json = {
 "RS-ST01-49-00T-AIN01-VHD001",
 "PINTURA - DIVERSOS",
 "Pintura da válvula 49.004. P49. Solicitante Darlan MSV.",
-"55",
+"99",
 "12/05/2025",
 "05",
 "05"
@@ -169606,7 +169606,7 @@ const json = {
 "RS-ST01-49-04P-WCM01",
 "HIDROSANITÁRIA - MANUTENÇÃO",
 "Vaso sanitário solto no box 03. P49-BAN105-BOX003. Solicitante Claudia MSV.",
-"50",
+"47",
 "12/05/2025",
 "05",
 "05"
@@ -169958,7 +169958,7 @@ const json = {
 "[A30]MANUTENÇÃO VIDRO¢",
 "INC2711810 - Borracha do vidro esta soltando na parte de dentro da portaria 3. P42. Solicitante Rafaela Cate.  10m ESPUMA PARA VEDAÇÃO DE VIDRO pedido: 4540902612",
 "50",
-"12/05/2025",
+"15/05/2025",
 "05",
 "05"
 ],
@@ -170425,7 +170425,7 @@ const json = {
 "RS-ST01-11-01P-SLA01",
 "MANUTENÇÃO CARPETE              ",
 "INC2712116 - Troca de carpete na frente da máquina de café. Temos todos os materiais para a execução do serviço, sendo necessário a mão de obra e um pincel. Os materiais que temos são: a cola especifica para esta aplicação e o carpete nas cores a serem trocadas. P11-Sala PEO. Solicitante Pedro Junior.",
-"55",
+"99",
 "12/05/2025",
 "05",
 "05"
@@ -171271,7 +171271,7 @@ const json = {
 "PORTA AUTOMÁTICA - MANUTENÇÃO¢",
 "Porta automática da entrada do prédio não está funcionando. P49-Hall térreo. Solicitante Guilherme MSV.",
 "50",
-"",
+"15/05/2025",
 "05",
 "05"
 ],
@@ -171374,7 +171374,7 @@ const json = {
 "RS-ST01-50-00T-STR02",
 "ACIONADOR MANUAL - MANUTENÇÃO¢",
 "INC2707361 - Botoeira de emergência quebrada. Acionador manual AC.016. P50-Atrás das soldas da fábrica do plástico. Solicitante Carlos Souza.",
-"0",
+"99",
 "",
 "05",
 "05"
@@ -171686,7 +171686,7 @@ const json = {
 "RS-ST01-27",
 "EQUIPAMENTOS - MANUTENÇÃO",
 "Monumento cilindros STIHL está com o S descolando. P27. Solicitante Gustavo Barth.",
-"50",
+"55",
 "12/05/2025",
 "05",
 "05"
@@ -172193,7 +172193,7 @@ const json = {
 "RS-ST01-29",
 "GOTEIRA 29.01¢$",
 "INC2718201 - Verificar provável vazamento no telhado, pois o vazamento ocasiona as manchas nas placas. Corredor onde está o bebedouro. P29. Solicitante Marcelo Lima.",
-"77",
+"99",
 "12/05/2025",
 "05",
 "05"
@@ -172947,7 +172947,7 @@ const json = {
 "RS-ST01-50-00T-SLA07",
 "SUPORTE - MANUTENÇÃO",
 "INC2722418 - O suporte da tv se desprendeu parcialmente da parede, tem risco de cair e machucar alguém. É somente fixação do suporte, não tem nada a ver com a TV (foto em anexo). P50-Sala TRF. Solicitante Leticia Batista.",
-"50",
+"47",
 "15/05/2025",
 "05",
 "05"
@@ -173324,7 +173324,7 @@ const json = {
 "RS-ST01-31-00T-AIN01-PRR008",
 "PORTA RÁPIDA - MANUTENÇÃO¢",
 "INC2723427 - Porta rápida 31.008 com cinta arrebentada e com a lona rasgada, fotos em anexo. P31-porta de entrada da fundição de magnésio. Solicitante Wagner Pinto.",
-"46",
+"48",
 "",
 "05",
 "05"
@@ -173506,7 +173506,7 @@ const json = {
 "RS-ST01-43-00T-AIN01-PRS019",
 "PORTA RÁPIDA - MANUTENÇÃO¢",
 "Chamar Sebras, consertar cabo de aço e sensor. PRS43.019. P43. Solicitante Rodrigo MSV.",
-"46",
+"48",
 "",
 "05",
 "05"
@@ -173584,7 +173584,7 @@ const json = {
 "RS-ST01-31",
 "APOIO ELETRICISTA - PLANEJADO",
 "Realizar mapeamento de todos ventiladores do P31. Procurar setor planejamento antes de iniciar a atividade. Solicitante Nathalia MSV.",
-"55",
+"99",
 "12/05/2025",
 "05",
 "05"
@@ -173766,7 +173766,7 @@ const json = {
 "RS-ST01-18-00T-SLA09",
 "MANUTENÇÃO PORTA",
 "INC2724401 - A porta que tem controlador de acesso no prédio está fazendo um barulho muito forte quando abre e fecha, acredito que precisa dar uma olhada e colocar um óleo ou algo do tipo. P18-Sala planejamento e compras. Solicitante Fabricio Langer.",
-"50",
+"47",
 "12/05/2025",
 "05",
 "05"
@@ -173792,7 +173792,7 @@ const json = {
 "RS-ST01-43-00T-AIN01-PRS005",
 "PORTA RÁPIDA - MANUTENÇÃO¢",
 "Porta rápida doca 05, substituir sensor fim de curso. 43.005. Solicitante Rodrigo MSV.",
-"46",
+"48",
 "",
 "05",
 "05"
@@ -174065,7 +174065,7 @@ const json = {
 "RS-ST01-49-05P-SLA02-CSE023",
 "MANUTENÇÃO FORRO",
 "Troca de placa de forro ao lado do ACO49.026 na sala do Lourival, 5º andar. P49. Solicitante Rodrigo MSV.",
-"50",
+"47",
 "12/05/2025",
 "05",
 "05"
@@ -174390,7 +174390,7 @@ const json = {
 "RS-ST01-27",
 "CALHA - LIMPEZA¢$",
 "Realizar limpeza da calha. P27. Solicitante Cassiano MSV.",
-"55",
+"99",
 "12/05/2025",
 "05",
 "05"
@@ -174858,7 +174858,7 @@ const json = {
 "RS-ST01-27-00T-WCM02-BOX06",
 "HIDROSANITÁRIA - MANUTENÇÃO",
 "Sanitário com a tampa do vaso quebrada. P27-BAN049-BOX006. Solicitante Jaqueline MSV.",
-"50",
+"47",
 "12/05/2025",
 "05",
 "05"
@@ -176587,7 +176587,7 @@ const json = {
 "RS-ST01-52",
 "ZS - Corrimão quebrado doca ext PSL_P31*¢",
 "Corrimão quebrado do prédio 31 na descida da rampa da plataforma da logística próximo a rampa do magnésio. Duvida falar com Felipe na ferramentaria prédio 52. Tel.981920965.",
-"46",
+"48",
 "",
 "05",
 "05"
@@ -176604,6 +176604,45 @@ const json = {
 "",
 "05",
 "05"
+],
+[
+"65022",
+"820192770",
+"3",
+"PIN",
+"RS-ST01-31",
+"APOIO - PLANEJADO",
+"13/05 Apoio no processo de recolhimento de resíduo. Solicitante Wesley MSV.",
+"50",
+"13/05/2025",
+"05",
+"05"
+],
+[
+"65023",
+"810509651",
+"1",
+"SPI",
+"RS-ST01-50-00T-AIN01-KTE001",
+"ZU - KIT DE EMERGÊNCIA - LACRE ROMPIDO",
+"INC2734036 - KTE50.001 com lacre rompido. P50-UMO. Solicitante Neuro Meireles.",
+"50",
+"13/05/2025",
+"06",
+"06"
+],
+[
+"65024",
+"810509652",
+"1",
+"ELE",
+"RS-ST01-24",
+"ZU - FALTA DE ENERGIA",
+"Estacionamento de motos na B2 sem iluminação. Solicitante Lucas Brandalise.",
+"50",
+"13/05/2025",
+"06",
+"06"
 ],
 [
 "2485398",
