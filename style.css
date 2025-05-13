@@ -71,7 +71,7 @@ body{
     background-color: var(--orange);
     color: white;
     box-shadow: 0.3125rem 0.3125rem rgb(255,162,122);
-    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    font-size: clamp(0.9rem, 2.5vw, 1.5rem);
     border-radius: 0.3125rem;
 }
 
@@ -83,7 +83,7 @@ body{
     background-color: var(--ice);
     color: var(--plumbum);
     box-shadow: 0.3125rem 0.3125rem white;
-    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    font-size: clamp(0.9rem, 2.5vw, 1.5rem);
     border-radius: 0.3125rem;
 }
 
@@ -113,7 +113,7 @@ body{
     border: none;
     margin: 0;
     padding: 0;
-    font-size: clamp(1rem, 2.5vw, 2rem);
+    font-size: clamp(0.9rem, 2.5vw, 2rem);
     width: 93%;
 }
 
