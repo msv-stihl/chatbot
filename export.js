@@ -106959,7 +106959,7 @@ const json = {
 "RS-ST01-50-00T-STR04",
 "CABEAMENTO LÓGICO - INSTALAÇÃO¢",
 "TASK0246226 - Ponto de rede necessário para comunicação via rede pela máquina de medição EQUATOR 300. Ligação em rede necessária devido ao Projeto ONE STIHL, onde as máquinas devem ser conectadas via software QM/3 para lançamento dos resultados de medição diretamente no SAP. Será instalado no equipamento, computador STIHL tipo MEA. Usinagem de Magnésio - P50. Solicitante Felipe Gomes.",
-"48",
+"96",
 "",
 "10",
 "10"
@@ -134387,9 +134387,9 @@ const json = {
 "4",
 "ELE",
 "PA-ST03",
-"EQUIPAMENTOS - INSTALAÇÃO",
+"EQUIPAMENTOS - INSTALAÇÃO¢",
 "INC2592437 - Precisamos da instalação de sistema externo de acionamento dos exaustores das duas salas de Data Centers do CD de Benevides. Atualmente, temos o acionamento apenas por meio de disjuntores que estão dentro do quadro elétrico que possuí acesso restrito. Solicitamos a instalação de um disjuntor externo que possibilite o acionamento quando os sistemas de ar-condicionado da sala falham. Observem que estes acionamentos costuma ser emergenciais, podendo ocorrer em horários em que não há eletricista na planta. Favor contatar o colega Fabrício Sousa da Conceição, no local, para buscar mais detalhes sobre a instalação. Data centers do CD de Benevides. Solicitante Stiver Correa.  ",
-"40",
+"99",
 "06/02/2025 15:22:00",
 "05",
 "05"
@@ -134714,7 +134714,7 @@ const json = {
 "RS-ST01-28",
 "PINTURA - DIVERSOS",
 "Revitalizar gradil em frente ao prédio 28. Solicitante Rodrigo MSV.",
-"55",
+"99",
 "14/05/2025",
 "05",
 "05"
@@ -139524,7 +139524,7 @@ const json = {
 "RS-ST01-43",
 "EQUIPAMENTOS - LIMPEZA",
 "Programar limpeza da usina foto voltaica. P43. Solicitante Lucas Brandalise.",
-"55",
+"77",
 "19/05/2025",
 "05",
 "05"
@@ -157670,9 +157670,9 @@ const json = {
 "3",
 "ELE",
 "RS-ST01-50-01P-SLA07",
-"INTERRUPTOR - MANUTENÇÃO",
+"[PLE]INTERRUPTOR - MANUTENÇÃO",
 "Trocar interruptor da sala do gerente. P50. Solicitante Rodrigo MSV.",
-"48",
+"49",
 "27/03/2025",
 "05",
 "05"
@@ -163561,8 +163561,8 @@ const json = {
 "RS-ST01-50-00T-STR04",
 "EQUIPAMENTOS - INSTALAÇÃO",
 "INC2692920 - instalação de espelho convexo na usinagem de magnésio P50. Já temos o espelho disponível, preciso somente da instalação. Espelho está no prédio 15 a/c Everton Garcia. P50. Solicitante Everton Garcia.",
-"47",
-"16/05/2025",
+"50",
+"22/05/2025",
 "05",
 "05"
 ],
@@ -165470,9 +165470,9 @@ const json = {
 "4",
 "CIV",
 "RS-ST01-18-00T-SLA09",
-"FIXAÇÃO DE QUADRO",
+"[MDS]FIXAÇÃO DE QUADRO",
 "INC2701588 - Fixação de um quadro branco de medidas 1x1 em uma das paredes do setor de planejamento, mais informações com Bruno Ramos ou Jackson Morais. P18-Planejamento. Solicitante Jackson Morais.",
-"48",
+"49",
 "02/05/2025",
 "05",
 "05"
@@ -170022,8 +170022,8 @@ const json = {
 "RS-ST01-28-01P-WCM01",
 "MOBILIÁRIO - CONSERTO¢",
 "INC2711941 - Mobiliário da pia precisa de manutenção, soltou a parte de baixo. P28-BAN054. Solicitante Valter Lopes.",
-"50",
-"20/05/2025",
+"55",
+"19/05/2025",
 "05",
 "05"
 ],
@@ -173428,7 +173428,7 @@ const json = {
 "RS-ST01-11",
 "LUMINÁRIA EXTERNA - MANUTENÇÃO!@",
 "1 bulbo led queimada no lado externo da porta de acesso ao forno. P11. Solicitante Rodrigo MSV.  PTA 15M",
-"55",
+"99",
 "19/05/2025",
 "05",
 "05"
@@ -173766,7 +173766,7 @@ const json = {
 "RS-ST01-18-00T-SLA09",
 "MANUTENÇÃO PORTA",
 "INC2724401 - A porta que tem controlador de acesso no prédio está fazendo um barulho muito forte quando abre e fecha, acredito que precisa dar uma olhada e colocar um óleo ou algo do tipo. P18-Sala planejamento e compras. Solicitante Fabricio Langer.",
-"50",
+"99",
 "19/05/2025",
 "05",
 "05"
@@ -174117,7 +174117,7 @@ const json = {
 "RS-ST01-04-00T-SLA08",
 "CADEIRA - CONSERTO",
 "INC2724761 - Cadeira esta com a parte das costas frouxa. O reparo seria apenas fazer o aperto dos parafusos sextavados. P04-Sala controladoria. Solicitante Eduardo de Azevedo.",
-"55",
+"99",
 "19/05/2025",
 "05",
 "05"
@@ -175690,7 +175690,7 @@ const json = {
 "RS-ST01-15-00T-STR01",
 "MANUTENÇÃO PISO",
 "INC2731161 - Vários pontos com buracos e rachaduras em piso no bloco C. P15-PSL. Solicitante Everton Garcia.",
-"50",
+"47",
 "19/05/2025",
 "10",
 "10"
@@ -175976,7 +175976,7 @@ const json = {
 "RS-ST01-31-02P-SLA01",
 "RÉGUA ELÉTRICA - INSTALAÇÃO",
 "INC2731315 - Precisamos de uma régua porque faltou tomada para instalar computador e telefone ao mesmo tempo. Mesa da estagiária será ao lado das mesas da Denise e da Andria Thiesen, uma das duas estará na sala e poderá informar sobre o caso. Mesa da nova estagiária Luna Marengo Tesser. P31-Sala adm jurídico. Solicitante Denise Fuhr.",
-"47",
+"96",
 "14/05/2025",
 "07",
 "07"
@@ -176249,7 +176249,7 @@ const json = {
 "RS-ST01-31",
 "VENTILADOR - MANUTENÇÃO!",
 "INC2732201 - Hélice do ventilador da prensa 006 está solta. P31. Solicitante Giovane Borowsky.",
-"50",
+"99",
 "19/05/2025",
 "05",
 "05"
@@ -176427,7 +176427,7 @@ const json = {
 "65005",
 "840004976",
 "4",
-"CIV",
+"ADM",
 "RS-ST01-43-00T-STR01",
 "INSULFILM - INSTALAÇÃO",
 "INC2733255 - O excesso de sol realmente atrapalhar o uso do computador. Aqui  algumas soluções que pode instalar filme solar (película) ou persiana para entrada de sol nas janelas em frente ao computador. Foto do local em anexo. P43B. Solicitante Everton Garcia.",
@@ -176498,8 +176498,8 @@ const json = {
 "Barra antipânico quebrada, necessário conserto urgentemente. PCR50.008. P50. Solicitante Lucas Brandalise.",
 "40",
 "19/05/2025",
-"10",
-"10"
+"05",
+"05"
 ],
 [
 "65011",
@@ -177172,7 +177172,7 @@ const json = {
 "RS-ST01-50",
 "MANUTENÇÃO FORRO",
 "INC2734403 - Troca de forro quebrado no laboratório de desenvolvimento metrologia, laboratório em frente a Usinagem de Magnésio. P50. Solicitante Leonardo Fagundes.",
-"50",
+"47",
 "19/05/2025",
 "10",
 "10"
@@ -177187,8 +177187,8 @@ const json = {
 "INC2734408 - Não temos chave para trancar o laboratório de metrologia do P50. Com isso se faz necessário a troca da fechadura da porta externa. P50-Laboratório metrologia. Solicitante Guilherme Trindade.",
 "40",
 "19/05/2025",
-"10",
-"10"
+"05",
+"05"
 ],
 [
 "65069",
@@ -177211,7 +177211,7 @@ const json = {
 "RS-ST01-28-00T-WCM02-MCT03",
 "HIDROSANITÁRIA - VAZAMENTO",
 "Mictório 03 com vazamento. P28-BAN056-MCT003. Solicitante Maria MSV.",
-"50",
+"40",
 "19/05/2025",
 "05",
 "05"
@@ -178472,7 +178472,7 @@ const json = {
 "RS-ST01-28-00T-WCF02-BOX02",
 "ZU - HIDROSANITÁRIA - VAZAMENTO",
 "Vazamento embaixo do vaso sanitário. P28-BAN057-BOX002. Solicitante Nair MSV.",
-"55",
+"99",
 "19/05/2025",
 "06",
 "06"
@@ -178498,7 +178498,7 @@ const json = {
 "RS-ST01-28-00T-STR05",
 "ZU - MANUTENÇÃO VIDRO",
 "INC2738085 - Vidro da janela quebrado ao lado da porta grande, em frente a célula 27. P28-ZCP. Solicitante Luimar Marcos.",
-"55",
+"99",
 "19/05/2025",
 "06",
 "06"
@@ -178511,7 +178511,7 @@ const json = {
 "RS-ST01-01-00T-WCM01",
 "ZU - HIDROSANITÁRIA - VAZAMENTO",
 "Vazamento no banheiro, acredito que seja nos mictórios. P01-BAN001. Solicitante Jaqueline MSV.",
-"55",
+"99",
 "19/05/2025",
 "06",
 "06"
@@ -178524,7 +178524,59 @@ const json = {
 "RS-ST01-27-00T-SLA01",
 "ZU - HIDRÁULICA - VAZAMENTO",
 "Pia que fica no refeitório próximo aos bifes, está vazando água pelo cano. P27-Restaurante. Solicitante Jaqueline MSV.",
-"50",
+"99",
+"19/05/2025",
+"06",
+"06"
+],
+[
+"65186",
+"820192969",
+"2",
+"CIV",
+"RS-ST01-28-01P-WCM01",
+"APOIO CIVIL - NÃO PLANEJADO",
+"Apoio na remoção da pia do banheiro. P28-BAN054. Solicitante Cassiano MSV.",
+"96",
+"19/05/2025",
+"05",
+"05"
+],
+[
+"65187",
+"810510659",
+"1",
+"CIV",
+"RS-ST01-49-00T-WCM01-BOX02",
+"ZU - DESENTUPIMENTO VASO",
+"Sanitário entupido. P49-BAN100-BOX002. Solicitante Daniela MSV.",
+"99",
+"19/05/2025",
+"06",
+"06"
+],
+[
+"65188",
+"820192970",
+"2",
+"CIV",
+"RS-ST01-01-00T-WCM01",
+"HIDROSANITÁRIA - VAZAMENTO",
+"Vazamento no banheiro, acredito que seja nos mictórios. P01-BAN001. Solicitante Jaqueline MSV.",
+"40",
+"",
+"05",
+"05"
+],
+[
+"65189",
+"810510800",
+"1",
+"ELE",
+"RS-ST01-32",
+"ZU - FALTA DE ENERGIA",
+"INC2738165 - Sem iluminação no corredor central do térreo. P32-ETE. Solicitante Aristeu Correa.",
+"99",
 "19/05/2025",
 "06",
 "06"
