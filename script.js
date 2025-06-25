@@ -253,20 +253,40 @@ function returnMessage(object){
                     break;
             }
             break;
+        case "39": //Impedimento - fornecedor
+            message = `Estamos buscando um fornecedor no mercado para que possamos adquirir os materiais necessários para atender seu chamado. Peço que consulte novamente dentro de alguns dias 🫡`;
+            break
         case "40": //Impedimento - material
-            switch(randomnumber){
-                case 0:
-                    message = `Seu chamado está aguardando compra de material. Assim que o material estiver disponível, entrará na programação 🫡`;
-                    enviarDuvida = true;
-                    break;
-                case 1:
-                    message = `Seu chamado está aguardando a aquisição do material. Assim que ele estiver disponível, será incluído na programação 😁`;
-                    enviarDuvida = true;
-                    break;
-                case 2:
-                    message = `O atendimento do seu chamado depende da compra do material. Assim que estiver disponível, será programado para execução 😚`;
-                    enviarDuvida = true;
-                    break;
+            if(datePreview < dateToday){
+                switch(randomnumber){
+                    case 0:
+                        message = `Seu chamado está aguardando compra de material. Assim que o material estiver disponível, entrará na programação 🫡`;
+                        enviarDuvida = true;
+                        break;
+                    case 1:
+                        message = `Seu chamado está aguardando a aquisição do material. Assim que ele estiver disponível, será incluído na programação 😁`;
+                        enviarDuvida = true;
+                        break;
+                    case 2:
+                        message = `O atendimento do seu chamado depende da compra do material. Assim que estiver disponível, será programado para execução 😚`;
+                        enviarDuvida = true;
+                        break;
+                }
+            } else{
+                switch(randomnumber){
+                    case 0:
+                        message = `Seu chamado está aguardando compra de material. Assim que o material estiver disponível, entrará na programação 🫡`;
+                        enviarDuvida = true;
+                        break;
+                    case 1:
+                        message = `Seu chamado está aguardando a aquisição do material. Assim que ele estiver disponível, será incluído na programação 😁`;
+                        enviarDuvida = true;
+                        break;
+                    case 2:
+                        message = `O atendimento do seu chamado depende da compra do material. Assim que estiver disponível, será programado para execução 😚`;
+                        enviarDuvida = true;
+                        break;
+                }
             }
             break;
         case "41": //Impedimento - ferramenta
